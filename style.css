@@ -1,0 +1,72 @@
+.button-div{
+    text-align: center;
+    margin-top: 50px;
+}
+.click-class {
+	font-size: 50px;
+	text-decoration: none;
+	background: #3498db;
+	display: inline-block;
+	color: #fff;
+	padding: 15px 40px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+.click-class::before{
+    content: "";
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    border-radius: 10px;
+    z-index: -1;
+
+    transition: .4s;
+}
+
+.click-class:hover::before{
+    width:100% ;
+}
+
+
+
+
+.another{
+    margin-top: 200px;
+    text-align: center;
+}
+
+a{
+    font-size: 50px;
+    text-decoration: none;
+    background-color: green;
+    padding: 20px 40px;
+    border-radius: 10px;
+    color:white;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+a::before{
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    background-color: red;
+    border-radius: 10px;
+    transition: .5s;
+    z-index: -1;
+}
+a:hover::before{
+    width: 100%;
+}
+
+
+
+
+
